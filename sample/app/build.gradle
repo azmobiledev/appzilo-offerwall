@@ -22,5 +22,5 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:27.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.appzilo.sdk:offerwall:1.0'
+    compile 'com.appzilo.sdk:offerwall:1.1'
 }
