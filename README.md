@@ -1,5 +1,5 @@
 ## Appzilo Offerwall
-Appzilo offerwall for Android support API 15 and above.
+Appzilo offerwall for Android support API 17 and above.
 
 ## Installation
 Add the following to your Project `build.gradle` file:
@@ -14,7 +14,7 @@ Add the following dependency to your app's `build.gradle` file:
 
 ```
 dependencies {
-	compile 'com.appzilo.sdk:offerwall:1.1'
+	compile 'com.appzilo.sdk:offerwall:1.+'
 }
 ```
 
