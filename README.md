@@ -18,6 +18,14 @@ dependencies {
 }
 ```
 
+Add the following permission into app manifest if your app agree to grant App Usage Access Permission
+
+```
+<uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+```
+
+Missing permission above will auto hide App Review category.
+
 ## Usage
 
 Initialize sdk
