@@ -18,18 +18,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        HashMap<String, String> params = new HashMap<>();
+        // custom parameters that needed to be passed back in postback url
+        params.put(Offerwall.SUB_ID, "1234567");
+        params.put(Offerwall.SUB_ID2, "abcdefg");
+        Offerwall.initApp(MainActivity.this
+                , APP_KEY
+                , MEMBER_ID
+                , params);
+
+//        Offerwall.onNewIntent(getApplicationContext(), getIntent());
         Button offerwallButton = findViewById(R.id.open_btn);
         offerwallButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                HashMap<String, String> params = new HashMap<>();
-                // custom parameters that needed to be passed back in postback url
-                params.put(Offerwall.SUB_ID, "1234567");
-                params.put(Offerwall.SUB_ID2, "abcdefg");
-                Offerwall.initApp(MainActivity.this
-                        , APP_KEY
-                        , MEMBER_ID
-                        , params);
                 Offerwall.show();
             }
         });
