@@ -45,7 +45,7 @@ Offerwall.show();
 
 Checking callback (if enable screenshot)
 ```
-Add into onCreate override function
+//Add into onCreate override function
 Offerwall.onNewIntent(getApplicationContext(), getIntent());
 ```
 
