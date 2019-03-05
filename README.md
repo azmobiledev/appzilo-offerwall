@@ -18,22 +18,21 @@ dependencies {
 }
 ```
 
-Add the following permission into app manifest: (optional)
-if your app agree to grant App Usage Access Permission, more gigs will be available. 
+The following permissions are required to be added into the app manifest::
 
 ```
 <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
 ```
 
-Missing permission above will auto hide App Review category.
-
-if your app agree to enable screenshot function, it will help to prevent potential spam and increase the success rate of submissions.
+The App Review category requires the permission above.
 
 ```
 <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
+
+The permissions above are needed in order to enable the screenshot function, which will help reduce potential spam and increase submission success rate
 
 ## Usage
 

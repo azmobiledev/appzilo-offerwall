@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
     defaultConfig {
-        applicationId "com.resonetmobiledev.appzilo.offerwall.sample"
+        applicationId "com.resonet.test"
         minSdkVersion 17
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "45.0.0"
     }
     buildTypes {
         release {
@@ -20,7 +20,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.appzilo.sdk:offerwall:1.+'
 }

@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 , APP_KEY
                 , MEMBER_ID
                 , params);
-
-//        Offerwall.onNewIntent(getApplicationContext(), getIntent());
         Button offerwallButton = findViewById(R.id.open_btn);
         offerwallButton.setOnClickListener(new View.OnClickListener() {
             @Override
