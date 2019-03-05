@@ -18,7 +18,7 @@ dependencies {
 }
 ```
 
-The following permissions are required to be added into the app manifest::
+The following permissions are required to be added into the app manifest:
 
 ```
 <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
