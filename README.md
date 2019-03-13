@@ -27,9 +27,14 @@ The following permissions are required to be added into the app manifest:
 The App Review category requires the permission above.
 
 ```
-<uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
+```
+//Optional
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+
 ```
 
 The permissions above are needed in order to enable the screenshot function, which will help reduce potential spam and increase submission success rate
