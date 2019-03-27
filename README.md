@@ -49,10 +49,18 @@ Offerwall.show();
 ```
 
 Checking callback (if enable screenshot)
+Condition 1: 
+Offerwall is implemented in your main activity, include code below into onCreate function 
 ```
 //Add into onCreate override function
 Offerwall.onNewIntent(getApplicationContext(), getIntent());
 ```
+Condition 2:
+Offerwall is implemented in other activity
+
+1) Plese add in your main acitivity path `android:parentActivityName=".activity.XXX"` into the activity tag that used to open offerwall inside manifest.
+2) Implement `Offerwall.onNewIntent(getApplicationContext(), getIntent());` into onCreate/onResume function inside activity class that used to open offerwall.
+3) After success screenshot, will pass Offerwall.AZ_SCREENSHOT boolean to target activity.
 
 Passing custom parameters (SUB_ID, SUB_ID2, SUB_ID3, SUB_ID4, SUB_ID5)
 
