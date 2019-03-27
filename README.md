@@ -58,6 +58,7 @@ Offerwall is implemented in your main activity, include code below into onCreate
 Offerwall.onNewIntent(getApplicationContext(), getIntent());
 ```
 Condition 2:
+
 Offerwall is implemented in other activity
 
 1) Plese add in your main acitivity path `android:parentActivityName=".activity.XXX"` into the activity tag that used to open offerwall inside manifest.
