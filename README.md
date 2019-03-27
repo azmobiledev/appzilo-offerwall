@@ -49,7 +49,9 @@ Offerwall.show();
 ```
 
 Checking callback (if enable screenshot)
+
 Condition 1: 
+
 Offerwall is implemented in your main activity, include code below into onCreate function 
 ```
 //Add into onCreate override function
