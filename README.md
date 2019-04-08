@@ -52,7 +52,7 @@ Checking callback (if enable screenshot)
 
 Condition 1: 
 
-Offerwall is implemented in your main activity, include code below into onCreate function 
+Offerwall is implemented in your application main activity, include code below into onCreate function 
 ```
 //Add into onCreate override function
 Offerwall.onNewIntent(getApplicationContext(), getIntent());
