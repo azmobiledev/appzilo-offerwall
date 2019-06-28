@@ -59,6 +59,8 @@ Offerwall.initApp(this, "APP_KEY", "UNIQUE_USER_ID", params);
 Offerwall.show();
 ```
 
+
+
 ## Permissions
 
 We include the [INTERNET](http://developer.android.com/reference/android/Manifest.permission.html#INTERNET) and [ACCESS_NETWORK_STATE](https://developer.android.com/reference/android/Manifest.permission.html#ACCESS_NETWORK_STATE) permissions by default as we need it to make network requests and check if the network is available:
