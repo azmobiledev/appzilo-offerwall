@@ -14,7 +14,7 @@ Add the following dependency to your app's `build.gradle` file:
 
 ```
 dependencies {
-	implementation 'com.appzilo.sdk:offerwall:1.2.3'
+	implementation 'com.appzilo.sdk:offerwall:1.3.0'
 }
 ```
 
@@ -75,7 +75,13 @@ Offerwall.initApp(this, "APP_KEY", "UNIQUE_USER_ID", params);
 Offerwall.show();
 ```
 
+Support click notification to redirect related page (if app support notification)
 
+You will need to include [CHN] and [RMK] in your postback url for server to server postback.
+[CHN] will be used by sdk to redirect to related page while [RMK] can be used as the content in the notification.
+
+Include `intent.putExtra(Offerwall.OFFERWALL_CHANNEL, XXX);` into the class where notification opened is called in your app.
+XXX is the [CHN] value passed inside postback url.
 
 ## Permissions
 
