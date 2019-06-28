@@ -14,7 +14,7 @@ Add the following dependency to your app's `build.gradle` file:
 
 ```
 dependencies {
-	compile 'com.appzilo.sdk:offerwall:1.+'
+	implementation 'com.appzilo.sdk:offerwall:1.2.3'
 }
 ```
 
@@ -27,9 +27,14 @@ The following permissions are required to be added into the app manifest:
 The App Review category requires the permission above.
 
 ```
-<uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
+```
+//Optional
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+
 ```
 
 The permissions above are needed in order to enable the screenshot function, which will help reduce potential spam and increase submission success rate
@@ -44,10 +49,21 @@ Offerwall.show();
 ```
 
 Checking callback (if enable screenshot)
+
+Condition 1: 
+
+Offerwall is implemented in your application main activity, include code below into onCreate function 
 ```
 //Add into onCreate override function
 Offerwall.onNewIntent(getApplicationContext(), getIntent());
 ```
+Condition 2:
+
+Offerwall is implemented in other activity
+
+1) Plese add in your main acitivity path `android:parentActivityName=".activity.XXX"` into the activity tag that used to open offerwall inside manifest.
+2) Implement `Offerwall.onNewIntent(getApplicationContext(), getIntent());` into onCreate/onResume function inside activity class that used to open offerwall.
+3) After success screenshot, will pass Offerwall.AZ_SCREENSHOT boolean to target activity.
 
 Passing custom parameters (SUB_ID, SUB_ID2, SUB_ID3, SUB_ID4, SUB_ID5)
 
