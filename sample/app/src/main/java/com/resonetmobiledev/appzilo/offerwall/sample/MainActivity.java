@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String APP_KEY = "APP_KEY"; // key can be generated in appzilo dashboard
+	private final String APP_KEY = "APP_KEY"; // key can be generated in appzilo dashboard
     private final String MEMBER_ID = "MEMBER_ID"; // unique id/member id used in your app
 
     @Override
