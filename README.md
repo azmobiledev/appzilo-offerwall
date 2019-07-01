@@ -61,7 +61,7 @@ Condition 2:
 
 Offerwall is implemented in other activity
 
-1) Plese add in your main acitivity path `android:parentActivityName=".activity.XXX"` into the activity tag that used to open offerwall inside manifest.
+1) Please add in your main acitivity path `android:parentActivityName=".activity.XXX"` into the activity tag that used to open offerwall inside manifest.
 2) Implement `Offerwall.onNewIntent(getApplicationContext(), getIntent());` into onCreate/onResume function inside activity class that used to open offerwall.
 3) After success screenshot, will pass Offerwall.AZ_SCREENSHOT boolean to target activity.
 
