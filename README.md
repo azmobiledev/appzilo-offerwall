@@ -82,9 +82,9 @@ Support click notification to redirect to related page (if app support notificat
 You will need to include [CHN] and [RMK] in your postback url for server to server postback.
 [CHN] will be used by sdk to redirect to related page while [RMK] can be used as the content in the notification.
 
-Include `intent.putExtra(Offerwall.OFFERWALL_CHANNEL, XXX);` into the class where notification opened is called in your app.
-XXX is the [CHN] value passed inside postback url.
+Include `intent.putExtra(Offerwall.OFFERWALL_CHANNEL, XXX);` into the class where click notification is called in your app.
 Redirect and pass value above to the activity where offerwall is opened. (activity that include `Offerwall.onNewIntent(getApplicationContext(), getIntent());`)
+ps: XXX is the [CHN] value passed inside postback url.
 
 
 ## Permissions
