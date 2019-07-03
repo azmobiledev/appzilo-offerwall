@@ -84,6 +84,7 @@ You will need to include [CHN] and [RMK] in your postback url for server to serv
 
 Include `intent.putExtra(Offerwall.OFFERWALL_CHANNEL, XXX);` into the class where click notification is called in your app.
 Redirect and pass value above to the activity where offerwall is opened. (activity that include `Offerwall.onNewIntent(getApplicationContext(), getIntent());`)
+
 ps: XXX is the [CHN] value passed inside postback url.
 
 
