@@ -14,7 +14,7 @@ Add the following dependency to your app's `build.gradle` file:
 
 ```
 dependencies {
-	implementation 'com.appzilo.sdk:offerwall:1.2.3'
+	implementation 'com.appzilo.sdk:offerwall:1.3.0'
 }
 ```
 
@@ -61,7 +61,7 @@ Condition 2:
 
 Offerwall is implemented in other activity
 
-1) Plese add in your main acitivity path `android:parentActivityName=".activity.XXX"` into the activity tag that used to open offerwall inside manifest.
+1) Please add in your main acitivity path `android:parentActivityName=".activity.XXX"` into the activity tag that used to open offerwall inside manifest.
 2) Implement `Offerwall.onNewIntent(getApplicationContext(), getIntent());` into onCreate/onResume function inside activity class that used to open offerwall.
 3) After success screenshot, will pass Offerwall.AZ_SCREENSHOT boolean to target activity.
 
@@ -75,6 +75,17 @@ Offerwall.initApp(this, "APP_KEY", "UNIQUE_USER_ID", params);
 Offerwall.show();
 ```
 
+
+
+Support click notification to redirect to related page (if app support notification)
+
+You will need to include [CHN] and [RMK] in your postback url for server to server postback.
+[CHN] will be used by sdk to redirect to related page while [RMK] can be used as the content in the notification.
+
+Include `intent.putExtra(Offerwall.OFFERWALL_CHANNEL, XXX);` into the class where click notification is called in your app.
+Redirect and pass value above to the activity where offerwall is opened. (activity that include `Offerwall.onNewIntent(getApplicationContext(), getIntent());`)
+
+ps: XXX is the [CHN] value passed inside postback url.
 
 
 ## Permissions
