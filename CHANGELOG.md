@@ -1,3 +1,7 @@
+## Version 1.3.2
+- fix to not show default error page when server error
+- fix mixer prerequisite can't show whole page inside webview
+
 ## Version 1.3.1
 - fix duplicate class exception crash
 
