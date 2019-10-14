@@ -1,4 +1,4 @@
-## Version 1.3.2
+## Version 1.3.4
 - change all request protocol from http to https
 
 ## Version 1.3.2
