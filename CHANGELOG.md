@@ -1,4 +1,7 @@
 ## Version 1.3.2
+- change all request protocol from http to https
+
+## Version 1.3.2
 - fix to not show default error page when server error
 - fix mixer prerequisite can't show whole page inside webview
 
