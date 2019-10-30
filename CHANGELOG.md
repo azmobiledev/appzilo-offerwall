@@ -1,3 +1,6 @@
+## Version 1.3.5
+- fix only fullscreen opaque activities can request orientation crash in oreo 8.0
+
 ## Version 1.3.4
 - change all request protocol from http to https
 
