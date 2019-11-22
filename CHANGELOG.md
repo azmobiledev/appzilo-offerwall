@@ -1,3 +1,7 @@
+## Version 1.3.6
+- fix can't show decimal number in rewarded video
+- migrate to support androidx
+
 ## Version 1.3.5
 - fix only fullscreen opaque activities can request orientation crash in oreo 8.0
 
