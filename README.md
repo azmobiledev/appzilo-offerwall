@@ -14,7 +14,7 @@ Add the following dependency to your app's `build.gradle` file:
 
 ```
 dependencies {
-	implementation 'com.appzilo.sdk:offerwall:1.3.5'
+	implementation 'com.appzilo.sdk:offerwall:1.3.6'
 }
 ```
 
