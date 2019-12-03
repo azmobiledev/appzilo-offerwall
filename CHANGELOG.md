@@ -1,3 +1,6 @@
+## Version 1.3.7
+- fix appzilovideo sdk not available
+
 ## Version 1.3.6
 - fix can't show decimal number in rewarded video
 - migrate to support androidx
