@@ -1,3 +1,7 @@
+## Version 1.3.8
+- fix appzilovideo sdk not available
+- implement to disable offers when user using emulator
+
 ## Version 1.3.7
 - fix appzilovideo sdk not available
 
