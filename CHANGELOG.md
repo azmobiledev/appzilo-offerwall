@@ -1,5 +1,5 @@
 ## Version 1.3.8
-- fix appzilovideo sdk not available
+- fix webview crash when androidx:appcompat 1.1.0 and webview version less then 39
 - implement to disable offers when user using emulator
 
 ## Version 1.3.7
