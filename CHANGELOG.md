@@ -1,6 +1,3 @@
-## Version 1.3.9
-- fix onjsalert NumberFormatException when user using reCAPTCHA
-- fix okhttp network connection error for devices less then 5.0
 
 ## Version 1.3.8
 - fix webview crash when androidx:appcompat 1.1.0 and webview version less then 39
