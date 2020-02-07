@@ -1,4 +1,7 @@
 
+## Version 1.3.10
+- fix screenshot bugs
+
 ## Version 1.3.8
 - fix webview crash when androidx:appcompat 1.1.0 and webview version less then 39
 - implement to disable offers when user using emulator
