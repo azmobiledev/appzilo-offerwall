@@ -1,6 +1,6 @@
 ## Version 1.3.11
-- OS 10 and above not able to screenshot issue
-- When vpn not able to get detected as vpn, still able to get offers
+- fix OS 10 and above not able to screenshot issue
+- fix When vpn not able to get detected as vpn, still able to get offers
 
 ## Version 1.3.10
 - fix screenshot bugs
