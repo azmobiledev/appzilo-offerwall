@@ -10,7 +10,7 @@ repositories {
 }
 ```
 
-*IMPORTANT* Add the following dependency to your app's `build.gradle` file:
+***IMPORTANT*** Add the following dependency to your app's `build.gradle` file:
 
 If compileSdkVersion >= 29
 
