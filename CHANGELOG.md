@@ -1,6 +1,13 @@
+## Version 1.3.12
+- fix twitch video some devices will auto paused when buffering
+- fix twitch video in os5 will fail  to load
+
 ## Version 1.3.11
 - fix OS 10 and above not able to screenshot issue
 - fix When vpn not able to get detected as vpn, still able to get offers
+
+## Version 1.3.10.1
+- fix vpn issue
 
 ## Version 1.3.10
 - fix screenshot bugs
