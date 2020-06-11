@@ -12,9 +12,17 @@ repositories {
 
 Add the following dependency to your app's `build.gradle` file:
 
+If compileSdkVersion >= 29
+
 ```
 dependencies {
-	implementation 'com.appzilo.sdk:offerwall:1.3.11'
+	implementation 'com.appzilo.sdk:offerwall:1.3.12'
+}
+```
+If compileSdkVersion <= 28
+```
+dependencies {
+	implementation 'com.appzilo.sdk:offerwall:1.3.10.1'
 }
 ```
 
