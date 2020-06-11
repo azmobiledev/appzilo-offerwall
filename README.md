@@ -105,7 +105,7 @@ We include the [INTERNET](http://developer.android.com/reference/android/Manifes
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```  
 
-We also include the [FOREGROUND](https://developer.android.com/guide/components/services#Foreground) permission in our latest sdk to support mediaprojection that targetsdkversion to 29
+We also include the [FOREGROUND SERVICE](https://developer.android.com/guide/components/services#Foreground) permission in our latest sdk to support mediaprojection that targetsdkversion to 29
 ```
 <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 ```
